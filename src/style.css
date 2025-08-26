@@ -1,0 +1,189 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("https://images3.alphacoders.com/130/1303974.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  max-width: 700px;
+  animation: fadeIn 2s ease;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Botão */
+.btn {
+  padding: 14px 30px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+  transform: scale(1.08);
+}
+
+/* Seções */
+section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+
+/* Grid de Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Parallax */
+.parallax {
+  background: url("https://wallpapers.com/images/hd/wolf-eyes-1366-x-768-wallpaper-2fyywcc9rpurjg9v.jpg") no-repeat center/cover fixed;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.parallax-content {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  animation: fadeInUp 2s ease;
+}
+
+.parallax h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.parallax p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Galeria */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 40px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}

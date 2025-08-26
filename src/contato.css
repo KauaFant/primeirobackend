@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0e0e0e;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.topo {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("https://images3.alphacoders.com/130/1303974.jpg") no-repeat center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.topo h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.topo p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Formulário */
+.formulario {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: 2px solid #555;
+}
+
+/* Botão */
+.btn {
+  padding: 14px 30px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
